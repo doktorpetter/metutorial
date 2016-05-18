@@ -1,4 +1,4 @@
-import React, { Component, Proptype } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 // Task component - represents a single task item
 export default class Task extends Component {
@@ -12,5 +12,5 @@ export default class Task extends Component {
 Task.propTypes = {
 	// This component gets the task to display through a React prop
 	// We can use propTypes to indicate that it is required
-	task: Proptypes.Object.isRequired,
+	task: PropTypes.object.isRequired,
 };
